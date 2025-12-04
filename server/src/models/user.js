@@ -275,8 +275,8 @@ userSchema.methods.getDisplayRole = function () {
 };
 
 // Indexes for faster queries
-userSchema.index({ email: 1 });
-userSchema.index({ collegeId: 1 });
+// userSchema.index({ email: 1 });
+// userSchema.index({ collegeId: 1 });
 userSchema.index({ primaryRole: 1 });
 userSchema.index({ department: 1, yearOfStudy: 1 });
 userSchema.index({ 'teams.team': 1 });
